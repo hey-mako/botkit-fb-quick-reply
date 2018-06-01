@@ -32,7 +32,7 @@ quickReplyMiddleware(controller);
 // Listen to events by the payload
 controller.hears('MY_QUICK_REPLY_PAYLOAD', 'facebook_quick_reply', doSomething);
 
-// Listen to a payload that can be provided from a postback of quick reply
+// Listen to a payload that can be provided from a postback OR quick reply
 controller.hears('MY_QUICK_REPLY_PAYLOAD', ['facebook_quick_reply', 'facebook_postback'], doSomethingElse);
 ```
 
