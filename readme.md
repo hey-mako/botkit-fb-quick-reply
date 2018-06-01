@@ -1,4 +1,4 @@
-# botkit-fb-quick-reply [![Build Status](https://travis-ci.org/brh55/botkit-fb-quick-reply.svg?branch=master)](https://travis-ci.org/brh55/botkit-fb-quick-reply)
+# botkit-fb-quick-reply [![Build Status](https://travis-ci.com/mako-ai/botkit-fb-quick-reply.svg?branch=master)](https://travis-ci.com/mako-ai/botkit-fb-quick-reply)
 
 > A botkit middleware to handle Facebook Messenger quick reply
 
