@@ -1,0 +1,29 @@
+{
+  "name": "botkit-fb-quick-reply",
+  "version": "0.0.0",
+  "description": "A botkit middleware to handle Facebook Messenger quick reply",
+  "license": "MIT",
+  "repository": "brh55/botkit-fb-quick-reply",
+  "author": {
+    "name": "brh55",
+    "email": "brandonhim@live.com",
+    "url": "github.com/mako-ai/botkit-fb-quick-reply"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    ""
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.17.0",
+    "xo": "^0.17.0"
+  }
+}
