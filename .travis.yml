@@ -1,7 +1,13 @@
 cache:
   directories:
-    - node_modules
+  - node_modules
+deploy:
+  api_key:
+    secure: TzM17MC1y8V1zM3TrP1HDEJylrTvBmpP4anHetYGz2ZIjSQ/D7CLVTkffGZqeVAuTdPQqxXZgG5LWIZBRYiI6wYvAWayvkccekWm+NelHQ3hoB/rHDIDtA8qtK/Ah71mOQTfgDw4wEh2u6pP30WY08e8rbwoXmQzzMmUANJ7OFQF1u9QsZjGm5I9gQdvV4eRm7GWWBXmmNgJgcllrHYYrZsNttkcGxZO8DWxHiTDSaX0ui/u5dfbB3RuCbfchd/WG7G5JFLZgTQctvKI7APZGUh+MdA3WHR1Nr/8VQ6DcaWAF0uP869yT4dnrYf7dxSTIij//t8x1SGoCtac4zoiyPTzWskvTLOgalstHwLCAA1nGNabpMPqrVhkzv+gvw89SSszihzKNcioSoPJ6UVmwTMlbOBdASj9cvmMaTnS0ToXQVfU0uvrMvWMsqPrr9egor4/E9eOd23KCi2h3amAMdgC0WE81UODdyKF/o85+3aZpVcQdgI6rD5U75bdutAHKsx2RriYe6yd2tLKt+WRG7SLvu1uam6XnfOOkwJamXKvJr21J3C4l70XcSJkOJ+lmEdFNavLfslUUUVWQklK1NEe9KX9aODeKJctefUMV4lhvj80W0ZWTruzIxW3iG6rx2EXiFcxfC5HcMNuJ/FuS8Br42sJN1CbLAAf1LTxAT0=
+  on:
+    tags: true
+  provider: npm
 language: node_js
 node_js:
-  - '6'
-  - '4'
+- '6'
+- '4'
