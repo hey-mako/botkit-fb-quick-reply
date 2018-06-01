@@ -1,8 +1,8 @@
 # botkit-fb-quick-reply [![Build Status](https://travis-ci.com/mako-ai/botkit-fb-quick-reply.svg?branch=master)](https://travis-ci.com/mako-ai/botkit-fb-quick-reply)
 
-> A botkit middleware to handle Facebook Messenger quick reply in an intuitive manner
+> A Botkit middleware to handle Facebook Messenger's quick reply in an intuitive manner
 
-Using this middleware allows you can now listen on quick reply payload instead of quick reply labels/text, allowing it to act similar to a postback. In addition, it also supports backwards compatibility to prevent breaking any existing code.
+Using this [Botkit](https://github.com/howdyai/botkit) middleware allows your controller to "listen" on Facebook Messenger quick reply payloads instead of the quick reply label/text. In addition, it also supports backwards compatibility to prevent breaking any existing code.
 
 The message object is updated to the following:
 ```js
@@ -18,7 +18,6 @@ message.type = eventName || 'facebook_quick_reply';
 $ npm install --save botkit-fb-quick-reply
 ```
 
-
 ## Usage
 
 ```js
@@ -32,6 +31,9 @@ quickReplyMiddleware(controller);
 
 // Listen to events by the payload
 controller.hears('MY_QUICK_REPLY_PAYLOAD', 'facebook_quick_reply', doSomething);
+
+// Listen to a payload that can be provided from a postback of quick reply
+controller.hears('MY_QUICK_REPLY_PAYLOAD', ['facebook_quick_reply', 'facebook_postback'], doSomethingElse);
 ```
 
 
